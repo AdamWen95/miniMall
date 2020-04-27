@@ -1,0 +1,14 @@
+/* components/goods/goods.wxss */
+.goods {
+  display: flex;
+  /* 换行 */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.goods .item {
+  width: 48%;
+  /* 需要给父元素加相对定位，但是在组件内的goods-item加会使文字直接贴在图片下（组件的item没有高度，是子元素撑开的），而图片大小不一，因此需要在这儿加相对定位 */
+  position: relative;
+  margin-top: 16rpx;
+}
